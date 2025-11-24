@@ -68,18 +68,18 @@ export default async function MemberDashboard() {
 
           {/* Currently Borrowed */}
           <div className="bg-white rounded-2xl border border-gray-200 p-8 mb-10">
-            <h2 className="text-xl font-bold mb-6">Currently Borrowed</h2>
+            <h2 className="text-xl text-gray-800 font-bold mb-6">Currently Borrowed</h2>
             <div className="space-y-4">
               <div className="flex justify-between items-center py-4 border-b">
                 <div>
-                  <p className="font-medium">Database System Concepts</p>
+                  <p className="font-medium text-gray-500">Database System Concepts</p>
                   <p className="text-sm text-gray-600">Due: 30 Nov 2025</p>
                 </div>
                 <span className="text-green-600 font-medium">On Time</span>
               </div>
               <div className="flex justify-between items-center py-4">
                 <div>
-                  <p className="font-medium">Operating System</p>
+                  <p className="font-medium text-gray-800">Operating System</p>
                   <p className="text-sm text-gray-600">Due: 28 Nov 2025</p>
                 </div>
                 <span className="text-red-600 font-medium">3 Days Left</span>

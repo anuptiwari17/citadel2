@@ -31,11 +31,9 @@ export default function Sidebar({ role }: { role: 'Admin' | 'Librarian' | 'Stude
 
   const adminNav: NavItem[] = [
     { href: '/admin', label: 'Dashboard', icon: <Home className="w-5 h-5" /> },
-    { href: '/admin/users', label: 'Manage Users', icon: <Users className="w-5 h-5" /> },
     { href: '/admin/books/add', label: 'Add Book', icon: <PlusCircle className="w-5 h-5" /> },
     { href: '/admin/books', label: 'Manage Books', icon: <BookOpen className="w-5 h-5" /> },
     { label: 'Search Books', icon: <Search className="w-5 h-5" />, onClick: () => setIsSearchOpen(true) },
-    { href: '/admin/overdue', label: 'Overdue & Fines', icon: <DollarSign className="w-5 h-5" /> },
   ];
 
   const librarianNav: NavItem[] = [
@@ -43,15 +41,12 @@ export default function Sidebar({ role }: { role: 'Admin' | 'Librarian' | 'Stude
     { href: '/librarian/issue', label: 'Issue Book', icon: <UserCheck className="w-5 h-5" /> },
     { href: '/librarian/return', label: 'Return Book', icon: <Clock className="w-5 h-5" /> },
     { label: 'Search Books', icon: <Search className="w-5 h-5" />, onClick: () => setIsSearchOpen(true) },
-    { href: '/librarian/members', label: 'Search Members', icon: <Users className="w-5 h-5" /> },
-    { href: '/librarian/history', label: 'Issue History', icon: <History className="w-5 h-5" /> },
   ];
 
   const memberNav: NavItem[] = [
     { href: '/member', label: 'My Dashboard', icon: <Home className="w-5 h-5" /> },
     { label: 'Search Books', icon: <Search className="w-5 h-5" />, onClick: () => setIsSearchOpen(true) },
     { href: '/member/borrowed', label: 'My Books', icon: <BookOpen className="w-5 h-5" /> },
-    { href: '/member/fines', label: 'My Fines', icon: <DollarSign className="w-5 h-5" /> },
   ];
 
   const facultyNav: NavItem[] = [

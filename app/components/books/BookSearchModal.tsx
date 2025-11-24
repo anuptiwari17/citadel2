@@ -165,7 +165,7 @@ export default function BookSearchModal({ isOpen, onClose }: { isOpen: boolean; 
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={`Search by ${searchType}...`}
-                className="flex-1 px-4 py-3 border border-gray-300 placeholder-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="flex-1 px-4 py-3 text-gray-800 border border-gray-300 placeholder-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600"
                 required
               />
             )}

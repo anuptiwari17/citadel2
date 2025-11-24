@@ -205,7 +205,7 @@ export default function ReturnBookForm() {
                 setTransactionInfo(null);
               }}
               placeholder="e.g., BK-2025-0001-01"
-              className="flex-1 px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="flex-1 px-4 py-3 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600"
               onKeyPress={(e) => e.key === 'Enter' && checkBookStatus()}
             />
             <button

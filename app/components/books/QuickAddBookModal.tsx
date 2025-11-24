@@ -158,7 +158,7 @@ export default function QuickAddBookModal({
                 placeholder="Book title"
                 maxLength={200}
                 required
-                className="w-full px-4 py-2.5 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full px-4 py-2.5 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
             </div>
 
@@ -175,7 +175,7 @@ export default function QuickAddBookModal({
                   onChange={handleChange}
                   placeholder="Author name"
                   required
-                  className="w-full px-4 py-2.5 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2.5 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>
 
@@ -207,7 +207,7 @@ export default function QuickAddBookModal({
                   value={formData.isbn}
                   onChange={handleChange}
                   placeholder="Optional"
-                  className="w-full px-4 py-2.5 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2.5 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>
 
@@ -223,7 +223,7 @@ export default function QuickAddBookModal({
                   min={1900}
                   max={new Date().getFullYear()}
                   required
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2.5 text-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>
             </div>
@@ -259,7 +259,7 @@ export default function QuickAddBookModal({
                   min={1}
                   max={100}
                   required
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2.5 text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function QuickAddBookModal({
                 value={formData.shelfLocation}
                 onChange={handleChange}
                 placeholder="e.g., A-101"
-                className="w-full px-4 py-2.5 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full px-4 py-2.5 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
             </div>
 

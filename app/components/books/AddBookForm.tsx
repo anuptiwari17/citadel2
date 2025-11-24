@@ -216,7 +216,7 @@ export default function AddBookForm() {
                 onChange={handleChange}
                 placeholder="e.g., McGraw-Hill"
                 required
-                className="w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full px-4 py-3 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
             </div>
 

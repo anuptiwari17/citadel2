@@ -1,7 +1,6 @@
 // app/member/page.tsx
 import Sidebar from '../components/dashboard/Sidebar';
 import Header from '../components/dashboard/Header';
-import DashboardBookSearch from '../components/books/DashboardBookSearch'; // ← NEW
 import { cookies } from 'next/headers';
 import jwt from 'jsonwebtoken';
 import { redirect } from 'next/navigation';
@@ -87,14 +86,6 @@ export default async function MemberDashboard() {
               </div>
             </div>
           </div>
-
-          {/* LIVE SEARCH — FULL WIDTH */}
-          <DashboardBookSearch />
-
-          {/* Optional: Keep old button or remove */}
-          {/* <a href="/search" className="mt-8 inline-block px-8 py-4 bg-gray-900 text-white rounded-xl font-medium hover:bg-gray-800 transition">
-            Advanced Search →
-          </a> */}
         </div>
       </main>
     </>

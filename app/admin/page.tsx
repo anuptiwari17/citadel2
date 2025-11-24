@@ -2,7 +2,6 @@
 import Sidebar from '../components/dashboard/Sidebar';
 import Header from '../components/dashboard/Header';
 import StatsCard from '../components/dashboard/StatsCard';
-import DashboardBookSearch from '../components/books/DashboardBookSearch';  // ← NEW
 import { cookies } from 'next/headers';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import { redirect } from 'next/navigation';
@@ -53,23 +52,18 @@ export default async function AdminDashboard() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* LEFT: Quick Actions */}
             <div className="bg-white rounded-2xl border border-gray-200 p-8">
-              <h2 className="text-xl font-bold mb-6">Quick Actions</h2>
+              <h2 className="text-xl text-black font-bold mb-6">Quick Actions</h2>
               <div className="grid grid-cols-2 gap-4">
-                <a href="/admin/books/add" className="p-5 bg-gray-900 text-white rounded-xl text-center font-medium hover:bg-gray-800 transition">Add New Book</a>
-                <a href="/admin/users/add" className="p-5 border-2 border-gray-300 rounded-xl text-center font-medium hover:border-gray-900 transition">Add Librarian</a>
-                <a href="/admin/reports" className="p-5 border-2 border-gray-300 rounded-xl text-center font-medium hover:border-gray-900 transition">View Reports</a>
+                <a href="/admin/books/add" className="p-5 bg-gray-900 rounded-xl text-center font-medium hover:bg-gray-800 transition">Add New Book</a>
+                <a href="/admin/users/add" className="p-5 border-2 border-gray-300 text-gray-500 rounded-xl text-center font-medium hover:border-gray-900 transition">Add Librarian</a>
+                <a href="/admin/reports" className="p-5 border-2 border-gray-300 text-gray-500 rounded-xl text-center font-medium hover:border-gray-900 transition">View Reports</a>
                 <a href="/admin/overdue" className="p-5 bg-red-600 text-white rounded-xl text-center font-medium hover:bg-red-700 transition">Overdue List</a>
               </div>
             </div>
 
-            {/* MIDDLE: Live Book Search */}
-            <div className="lg:col-span-1">
-              <DashboardBookSearch />
-            </div>
-
             {/* RIGHT: Recent Activity */}
             <div className="bg-white rounded-2xl border border-gray-200 p-8">
-              <h2 className="text-xl font-bold mb-6">Recent Activity</h2>
+              <h2 className="text-xl text-black font-bold mb-6">Recent Activity</h2>
               <div className="space-y-4 text-sm text-gray-600">
                 <p>→ Book &#34;Database Systems&#34; issued to Anshuman</p>
                 <p>→ Fine collected ₹50 from Rahul</p>

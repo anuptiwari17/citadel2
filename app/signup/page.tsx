@@ -105,7 +105,7 @@ export default function SignupPage() {
                   placeholder="Anshuman Mishra"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                  className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
+                  className="w-full pl-12 pr-4 py-4 placeholder-gray-500 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
                   disabled={isLoading}
                 />
               </div>
@@ -122,7 +122,7 @@ export default function SignupPage() {
                     placeholder="anshumanm.it.24@nitj.ac.in"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
+                    className="w-full pl-12 pr-4 py-4 placeholder-gray-500 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
                     disabled={isLoading}
                   />
                 </div>
@@ -136,7 +136,7 @@ export default function SignupPage() {
                     placeholder="9876543210"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value.replace(/\D/g, '').slice(0,10) })}
-                    className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
+                    className="w-full pl-12 pr-4 py-4 placeholder-gray-500 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
                     disabled={isLoading}
                   />
                 </div>
@@ -176,7 +176,7 @@ export default function SignupPage() {
                   placeholder="Create a strong password"
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full pl-12 pr-12 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
+                  className="w-full pl-12 pr-12 py-4 placeholder-gray-500 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 text-black"
                   disabled={isLoading}
                 />
                 <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-4 top-4">

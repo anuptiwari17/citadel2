@@ -2,7 +2,6 @@
 import Sidebar from '../components/dashboard/Sidebar';
 import Header from '../components/dashboard/Header';
 import StatsCard from '../components/dashboard/StatsCard';
-import DashboardBookSearch from '../components/books/DashboardBookSearch'; // ← NEW
 import { cookies } from 'next/headers';
 import jwt from 'jsonwebtoken';
 import { redirect } from 'next/navigation';
@@ -51,7 +50,7 @@ export default async function LibrarianDashboard() {
               <div className="w-16 h-16 bg-gray-900 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <span className="text-2xl text-white">→</span>
               </div>
-              <h3 className="text-xl font-bold">Issue Book</h3>
+              <h3 className="text-xl text-black font-bold">Issue Book</h3>
               <p className="text-gray-600 mt-2">Lend book to member</p>
             </a>
 
@@ -60,14 +59,11 @@ export default async function LibrarianDashboard() {
               <div className="w-16 h-16 bg-red-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <span className="text-2xl text-white">←</span>
               </div>
-              <h3 className="text-xl font-bold">Return Book</h3>
+              <h3 className="text-xl text-black font-bold">Return Book</h3>
               <p className="text-gray-600 mt-2">Accept returned book</p>
             </a>
 
-            {/* LIVE SEARCH — FULL WIDTH */}
-            <div className="lg:col-span-3">
-              <DashboardBookSearch />
-            </div>
+          
           </div>
         </div>
       </main>
